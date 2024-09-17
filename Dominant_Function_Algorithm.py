@@ -1,56 +1,4 @@
-## TIME LOG SUMMARY:
-## Thursday,  16 May 2024:  2:22  // Choosing Problem; Finding Help / Mathematical Understanding; Setting Up Initial Functions and Graphing
-## Friday,    17 May 2024:  0:43  // Coding Time Tracker + Improving Functionality and Readability of Exisitng Code; Further Research / Study
-## Monday,    20 May 2024:  3:00  // Created Test File; Created Plots and Heat Maps for Critical Curve, Dominating Function and Perturbing Function
-## Wednesday, 22 May 2024:  0:05  // Cleaned Up Code; Tested New Rouches_Theorem Function Call
-## Thursday,  23 May 2024:  5:45  // Finished Plot for Reference; Refined Test Cases; Debugging; Testing; Enhanced Readability (Incl. Adding Creating create_complex_graph_example function); Further Work on Rouches_Theorem Function
-## Friday,    24 May 2024:  1:30  // Attempted to Enhance Test File Robustness; Review Code
-
-## Time Log Variable Initialization
-time = 0
-total_time_spent = []
-
-## Time Logs by Day (Organized Chronologically by Date)
-May16 = 142
-total_time_spent.append(May16)
-
-May17 = 43
-total_time_spent.append(May17)
-
-May20 = 155
-total_time_spent.append(May20)
-
-May22 = 5
-total_time_spent.append(May22)
-
-May23 = 345
-total_time_spent.append(May23)
-
-May24 = 90
-total_time_spent.append(May24)
-
-## Sum Total Time Logged in Project
-for day in range(len(total_time_spent)):
-    time += total_time_spent[day]
-
-## Convert Time Log to Hours and Minutes, Then Print Statement
-total_hours = time // 60
-total_minutes = time % 60
-remaining_time = 600 - time
-remaining_hours = remaining_time // 60
-remaining_minutes = remaining_time % 60
-
-if remaining_hours > 0 and remaining_minutes > 0:
-    print(f"""\033[31mTotal Time Spent on Coding Project = {total_hours} hours and {total_minutes} minutes. 
-This means of the original 10 hours required, you need to complete another {remaining_hours} hours and {remaining_minutes} minutes.\n\33[0m""")
-    
-else:
-    print(f"\033[37mTime Check for 10 Hours Spent on Project:  {total_hours} hours and {total_minutes} minutes\033[0m \n"
-"   \033[32mCongratulations!!  You are ALL DONE!! :)\33[0m")
-
-
-
-## Begin Remainder of Project Code
+# Begin Project Code
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -76,7 +24,6 @@ def perturbing_part(z, a, b, n, k):
         -- The Critical Curve Value z Being Evaluated
     THEN Returns the Value of the Analytic Portion of the Harmonic Polynomial
     """
-
     return a / (z ** k)
 
 
